@@ -61,59 +61,59 @@
     </header>
     <main>
       <!-- modal form -->
-      <section class="backdrop is-hidden" data-modal>
-        <form class="modal-form is-hidden" data-modal>
-          <h2>Deje sus datos, nos contactaremos con usted</h2>
-          <label for="input-name"> Nombre</label>
+      <section class="backdrop is-=idden" data-modal>
+        <form class="backform is-hidden" data-modal>
+          <h2 class="backform__title">Deje sus datos, nos contactaremos con usted</h2>
+          <label class="backform__name" for="input-name"> Nombre</label>
           <div class="pos-relative-icons">
-            <input class="input" type="text" name="name" id="input-name" />
-            <svg class="icon-form" width="12" height="12" viewBox="0 ">
+            <input class="backform__input" type="text" name="name" id="input-name" />
+            <svg class="backform__icon" width="12" height="12" viewBox="0 ">
               <use href="./images/icons.svg#name"></use>
             </svg>
           </div>
 
-          <label> Telefono</label>
+          <label class="backform__name"> Telefono</label>
           <div class="pos-relative-icons">
-            <input class="input" type="tel" name="phone" />
-            <svg class="icon-form" width="12" height="12" viewBox="0 0 13 14">
+            <input class="backform__input" type="tel" name="phone" />
+            <svg class="backform__icon" width="12" height="12" viewBox="0 0 13 14">
               <use href="./images/icons.svg#phone"></use>
             </svg>
           </div>
 
-          <label> E-mail</label>
+          <label class="backform__name"> E-mail</label>
           <div class="pos-relative-icons">
-            <input class="input" type="email" name="email" />
-            <svg class="icon-form" width="15" height="13" viewBox="0 0 15 13">
+            <input class="backform__input" type="email" name="email" />
+            <svg class="backform__icon" width="15" height="13" viewBox="0 0 15 13">
               <use href="./images/icons.svg#email2"></use>
             </svg>
           </div>
 
-          <label> Comentarios</label>
+          <label class="backform__name"> Comentarios</label>
           <textarea
-            class="input comments-box"
+            class="backform__comments"
             name="comments"
             placeholder="Introduzca el texto"></textarea>
-          <div class="check-box-text">
+          <div class="backform__checktext">
             <input
-              class="input check-box"
+              class="backform__checkbox"
               type="checkbox"
               name="agreement"
               value="yes" />
-            <svg class="check-icon" width="15" height="16">
+            <svg class="backform__checkicon" width="15" height="16">
               <use href="./images/icons.svg#checked"></use>
             </svg>
-            <span
-              >Estoy de acuerdo con el boletín informativo y acepto los Términos
+            <span class="backform__policy">
+              Estoy de acuerdo con el boletín informativo y acepto los Términos
               y Condiciones.</span
             >
           </div>
 
-          <button type="button" class="close-button" data-modal-close>
-            <svg class="icon" width="11" height="11">
+          <button type="button" class="backdrop__closebutton" data-modal-close>
+            <svg class="icon--exit" width="11" height="11">
               <use href="./images/icons.svg#exit"></use>
             </svg>
           </button>
-          <button type="submit" class="send-form">Enviar</button>
+          <button type="submit" class="backform__senderbutton">Enviar</button>
         </form>
       </section>
       <section class="hero">

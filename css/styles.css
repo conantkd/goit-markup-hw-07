@@ -382,11 +382,10 @@ padding-top: 64px;
   pointer-events: none;
   opacity: 0;
 }
-
-.backdrop .modal-form {
+.backform {
   background-color: var(--white-color1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   width: 528px;
   height: 581px;
@@ -395,20 +394,27 @@ padding-top: 64px;
   padding-left: 41px;
   padding-right: 39px;
   transition: opacity cubic-bezier(0.4, 0, 0.2, 1) 2s,
-    transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.backdrop .modal-form.is-hidden {
+.backform.is-hidden {
   opacity: 1;
 }
 
-.backdrop .modal-form label {
+.backform__title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.17em;
+  padding: 38.5px 0 12px 0;
+}
+.backdrop .backform__name {
   padding-top: 10px;
   padding-bottom: 4px;
   text-align: left;
 }
 
-.backdrop .modal-form .input {
+.backdrop .backform__input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   display: block;
@@ -420,7 +426,7 @@ padding-top: 64px;
   width: 100%;
 }
 
-.backdrop .modal-form .comments-box {
+.backdrop .backform .backform__comments {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   display: block;
@@ -431,53 +437,53 @@ padding-top: 64px;
   width: 100%;
 }
 
-.backdrop .modal-form .normal-box .input:hover,
-.backdrop .modal-form .comments-box .input:hover,
-.backdrop .modal-form .comments-box .input:focus,
-.backdrop .modal-form .normal-box .input:focus {
+.backdrop  .backform__input:hover,
+.backdrop .backform .backform__comments .backform__input:hover,
+.backdrop .backform .backform__comments .backform__input:focus,
+.backdrop  .backform__input:focus {
   border: 1px solid #2196f3;
 }
 
-.backdrop .modal-form .normal-box .input:hover + .icon-form,
-.backdrop .modal-form .comments-box .input:hover + .icon-form,
-.backdrop .modal-form .comments-box .input:focus + .icon-form,
-.backdrop .modal-form .normal-box .input:focus + .icon-form {
+.backdrop .backform__input:hover + .backform__icon,
+.backdrop .backform .backform__comments .backform__input:hover + .backform__icon,
+.backdrop .backform .backform__comments .backform__input:focus + .backform__icon,
+.backdrop  .backform__input:focus + .backform__icon {
   fill: #2196f3;
 }
 
-.backdrop .modal-form .pos-relative-icons {
+.backdrop .backform .pos-relative-icons {
   position: relative;
 }
 
-.backdrop .modal-form .pos-relative-icons .icon-form {
+.backdrop .backform .pos-relative-icons .backform__icon {
   position: absolute;
   top: 14px;
   left: 12px;
 }
 
-.backdrop .modal-form .check-box-text {
+.backdrop .backform .backform__checktext {
   margin-left: 16px;
   padding-bottom: 5px;
   position: relative;
 }
 
-.backdrop .modal-form .check-box-text input {
+.backdrop .backform .backform__checktext .backform__checkbox {
   width: 15px;
   height: 16px;
 }
 
-.backdrop .modal-form .check-icon {
+.backdrop .backform .backform__checkicon {
   display: none;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.backdrop .modal-form input.check-box:checked ~ .check-icon {
+.backdrop .backform .backform__checkbox.backform__checkbox:checked ~ .backform__checkicon {
   display: inline;
 }
 
-.backdrop .modal-form span {
+.backdrop .backform__policy {
   display: inline-block;
   color: #757575;
   font-style: normal;
@@ -491,7 +497,7 @@ padding-top: 64px;
   top: -4px;
 }
 
-.close-button {
+.backdrop__closebutton {
   cursor: pointer;
   background-color: var(--white-color1);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -505,24 +511,15 @@ padding-top: 64px;
   top: 6.5px;
 }
 
-.close-button .icon {
+.backdrop__closebutton .icon--exit {
   fill: var(--black-color1);
 }
 
-.close-button:hover .icon {
+.backdrop__button:hover .icon--exit {
   fill: var(--blue-color1);
 }
 
-.backdrop .modal-form h2 {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  line-height: 1.17em;
-  padding: 38.5px 0 12px 0;
-}
-
-.backdrop .modal-form .send-form {
+.backdrop .backform__senderbutton {
   border: none;
   border-radius: 4px;
   background-color: var(--blue-color1);
