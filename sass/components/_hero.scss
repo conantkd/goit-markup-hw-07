@@ -1,0 +1,44 @@
+.hero {
+    &__container {
+    background-image: url("../images/imageprojects__overlay-hero.png"),
+        url("../images/image-hero-sec.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+    &__container  {
+    padding-top: 94px;
+    text-align: center;
+    }
+    &__header {
+    color: var(--white-color1);
+    font-size: 44px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    line-height: 1.36em;
+    padding-bottom: 41px;
+    text-align: center;
+    text-transform: uppercase;
+    }
+    &__button{
+    background-color: var(--blue-color1);
+    border: none;
+    border-radius: 4px;
+    color: var(--white-color1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    line-height: 1.875em;
+    margin-bottom: 189px;
+    padding: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    &__button:hover,
+    &__button:focus {
+    background-color: #188ce8;
+    }
+}
