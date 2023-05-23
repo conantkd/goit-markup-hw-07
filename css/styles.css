@@ -137,7 +137,7 @@ a:visited {
 /* banner hero section*/
 
 .hero__container {
-  background-image: url("../images/imageoverlay-hero.png"),
+  background-image: url("../images/imageprojects__overlay-hero.png"),
     url("../images/image-hero-sec.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -534,9 +534,9 @@ padding-top: 64px;
   margin: 20px 124px;
 }
 
-/**---portafolio web-----**/
-
-.container-menu {
+/***---portafolio web-----***/
+/**projects secion**/
+.filter{
   display: flex;
   gap: 8px;
   justify-content: center;
@@ -544,7 +544,7 @@ padding-top: 64px;
   padding-bottom: 50px;
 }
 
-.container-menu .button-filter {
+.filter .filter__button {
   background-color: var(--white-color2);
   border: none;
   border-radius: 4px;
@@ -558,13 +558,13 @@ padding-top: 64px;
   padding-right: 24px;
 }
 
-.container-menu .button-filter:focus,
-.container-menu .button-filter:hover {
+.filter .filter__button:focus,
+.filter .filter__button:hover {
   background-color: var(--blue-color1);
   color: var(--white-color1);
 }
 
-.window .container .visualizer-windows {
+ .container .projects__list {
   cursor: pointer;
   display: flex;
   flex-wrap: wrap;
@@ -572,17 +572,17 @@ padding-top: 64px;
   padding-bottom: 82px;
 }
 
-.window .container .visualizer-windows li {
+ .container .projects__cards {
   border: 1px solid #eeeeee;
   width: 370px;
 }
 
-.window .container .visualizer-windows li:hover {
+ .container .projects__cards:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.window .container .visualizer-windows li h3 {
+ .container .projects__names {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -592,7 +592,7 @@ padding-top: 64px;
   padding-bottom: 4px;
 }
 
-.window .container .visualizer-windows li p {
+ .container .projects__works {
   color: var(--grey-color1);
   font-size: 16px;
   font-weight: 400;
@@ -603,14 +603,14 @@ padding-top: 64px;
   padding-bottom: 24px;
 }
 
-/*Info overlay over images*/
+/*Info projects__overlay over images*/
 
-.window .container .visualizer-windows li .frame {
+ .container .projects__datacard {
   position: relative;
   overflow: hidden;
 }
 
-.window .container .visualizer-windows li .frame .overlay {
+ .container .projects__overlay {
   display: flex;
   align-items: center;
   background-color: rgba(33, 150, 243, 0.9);
@@ -631,7 +631,7 @@ padding-top: 64px;
   left: 0;
 }
 
-.window .container .visualizer-windows li:hover .frame .overlay {
+ .container .projects__cards:hover .projects__overlay {
   transform: translateY(0%);
 }
 
@@ -695,7 +695,6 @@ padding-top: 64px;
   height: 40px;
   width: 40px;
   justify-content: center;
-  padding-top: ;
 }
 
 .footer .socials__links--gray .icon {
