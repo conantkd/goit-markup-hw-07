@@ -30,4 +30,7 @@
     left: 0;
     top: 48px;
     }
+    &__link:hover, &__link:focus {
+      color: var(--blue-color1);
+    }
 }
