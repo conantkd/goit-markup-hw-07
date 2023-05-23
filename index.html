@@ -15,7 +15,7 @@
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>WebStudio</title>
   </head>
   <body>
@@ -65,7 +65,7 @@
         <form class="backform is-hidden" data-modal>
           <h2 class="backform__title">Deje sus datos, nos contactaremos con usted</h2>
           <label class="backform__name" for="input-name"> Nombre</label>
-          <div class="pos-relative-icons">
+          <div class="backform__containersvg">
             <input class="backform__input" type="text" name="name" id="input-name" />
             <svg class="backform__icon" width="12" height="12" viewBox="0 ">
               <use href="./images/icons.svg#name"></use>
@@ -73,7 +73,7 @@
           </div>
 
           <label class="backform__name"> Telefono</label>
-          <div class="pos-relative-icons">
+          <div class="backform__containersvg">
             <input class="backform__input" type="tel" name="phone" />
             <svg class="backform__icon" width="12" height="12" viewBox="0 0 13 14">
               <use href="./images/icons.svg#phone"></use>
@@ -81,7 +81,7 @@
           </div>
 
           <label class="backform__name"> E-mail</label>
-          <div class="pos-relative-icons">
+          <div class="backform__containersvg">
             <input class="backform__input" type="email" name="email" />
             <svg class="backform__icon" width="15" height="13" viewBox="0 0 15 13">
               <use href="./images/icons.svg#email2"></use>
