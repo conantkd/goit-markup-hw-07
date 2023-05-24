@@ -20,7 +20,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container container">
+      <div class="container header__container">
         <!-- navbar on top -->
         <nav class="navbar">
           <p class="logo">WebStudio</p>
@@ -39,8 +39,7 @@
           </ul>
         </nav>
         <!-- contact with icons on top -->
-        
-        <ul class=" booking list">
+        <ul class="booking list">
           <li>
             <a class="booking__link" href="mailto:info@devstudio.com"
               ><svg class="icon" width="16" height="12">
@@ -58,17 +57,22 @@
             >
           </li>
         </ul>
-        
       </div>
     </header>
     <main>
       <!-- modal form -->
       <section class="backdrop is-hidden" data-modal>
         <form class="backform is-hidden" data-modal>
-          <h2 class="backform__title">Deje sus datos, nos contactaremos con usted</h2>
+          <h2 class="backform__title">
+            Deje sus datos, nos contactaremos con usted
+          </h2>
           <label class="backform__name" for="input-name"> Nombre</label>
           <div class="backform__containersvg">
-            <input class="backform__input" type="text" name="name" id="input-name" />
+            <input
+              class="backform__input"
+              type="text"
+              name="name"
+              id="input-name" />
             <svg class="backform__icon" width="12" height="12" viewBox="0 ">
               <use href="./images/icons.svg#name"></use>
             </svg>
@@ -77,7 +81,11 @@
           <label class="backform__name"> Telefono</label>
           <div class="backform__containersvg">
             <input class="backform__input" type="tel" name="phone" />
-            <svg class="backform__icon" width="12" height="12" viewBox="0 0 13 14">
+            <svg
+              class="backform__icon"
+              width="12"
+              height="12"
+              viewBox="0 0 13 14">
               <use href="./images/icons.svg#phone"></use>
             </svg>
           </div>
@@ -85,7 +93,11 @@
           <label class="backform__name"> E-mail</label>
           <div class="backform__containersvg">
             <input class="backform__input" type="email" name="email" />
-            <svg class="backform__icon" width="15" height="13" viewBox="0 0 15 13">
+            <svg
+              class="backform__icon"
+              width="15"
+              height="13"
+              viewBox="0 0 15 13">
               <use href="./images/icons.svg#email2"></use>
             </svg>
           </div>
@@ -121,12 +133,12 @@
       <section class="hero">
         <div class="hero__container">
           <div class="container">
-          <h1 class="hero__header">
-            soluciones eficaces para <br />su negocio
-          </h1>
-          <button class="hero__button" type="button" data-modal-open>
-            Solicite nuestro servicio
-          </button>
+            <h1 class="hero__header">
+              soluciones eficaces para <br />su negocio
+            </h1>
+            <button class="hero__button" type="button" data-modal-open>
+              Solicite nuestro servicio
+            </button>
           </div>
         </div>
       </section>
@@ -486,7 +498,11 @@
           >
           <form>
             <label hidden>SUSCRIBETE</label>
-            <input class="footer__emailsender" type="email" name="email" placeholder="Correo electrónico" />
+            <input
+              class="footer__emailsender"
+              type="email"
+              name="email"
+              placeholder="Correo electrónico" />
             <button class="footer__button" type="submit">
               Suscríbase
               <svg class="footer__icon" width="24" height="24">
