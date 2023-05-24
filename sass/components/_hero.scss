@@ -5,14 +5,13 @@
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 auto;
-    min-width: 1600px;
+    background-size: 1600px;
     padding-left: 15px;
     padding-right: 15px;
-    }
-    &__container  {
     padding-top: 94px;
     text-align: center;
     }
+   
     &__header {
     color: var(--white-color1);
     font-size: 44px;
