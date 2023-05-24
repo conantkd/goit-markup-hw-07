@@ -115,16 +115,17 @@
 
         &__checkbox::before {
         content: "";
-        display: inline-block;
+        color: #fff;
+        background-color: #2196f3;
+        border-radius: 2px;
+        display: block;
         width: 15px;
         height: 16px;
-        border: 1px solid #212121;
-        border-radius: 2px;
-        background-color: #fff;
+        visibility: hidden
         }
         
         &__checktext:hover &__checkbox::before {
-        border-color: #212121;
+        visibility: visible;
         }
 
         &__policy {
