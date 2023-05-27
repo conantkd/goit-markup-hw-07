@@ -4,11 +4,9 @@
         url("../images/image-hero-sec.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size:100vw;
     margin: 0 auto;
-    background-size: 1600px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 94px;
+    padding: 94px 15px 0 15px;
     text-align: center;
     }
    
@@ -18,7 +16,7 @@
     font-weight: 900;
     letter-spacing: 0.06em;
     line-height: 1.36em;
-    padding-bottom: 41px;
+    padding: 0px 0px 41px;
     text-align: center;
     text-transform: uppercase;
     }
