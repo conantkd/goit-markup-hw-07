@@ -154,6 +154,41 @@
         line-height: 1.875em;
         padding: 10px 75px;
         text-align: center;
-        margin: 20px 124px;
+        margin: 20px auto ;
         }
     }
+
+
+@media screen and (max-width: 1198px) {
+    .backform {
+        width: 480px;
+        height: 480px;
+ &__comments {
+        height: 10vh;
+        width: 100%;
+        }
+
+         &__title {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        line-height: 1.17em;
+        padding: 18.5px 0 5px 0;
+        }
+    
+
+     &__input {
+     
+        width: 100%;
+        }
+    
+ &__senderbutton {
+        padding: 5px 75px;
+       
+        }
+    
+    }
+}
+
+      

@@ -25,3 +25,14 @@ padding-top: 64px;
     fill: var(--blue-color1);
     }
 }
+
+@media screen and (max-width: 1199px) {
+  .clients{
+padding-top: 64px;
+    &__cards {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    }
+  }
+}

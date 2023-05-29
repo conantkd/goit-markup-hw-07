@@ -77,3 +77,11 @@ a {
   text-align: center;
   text-transform: capitalize;
   }
+
+@media screen and (max-width: 1199px) {
+    .container {
+  width:  unset;
+}
+}
+
+
